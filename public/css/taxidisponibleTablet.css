@@ -1,0 +1,215 @@
+/* .container__page {
+  margin-top: 59px;
+} */
+.acordeon-desktop{
+  display: block;
+  margin-bottom: 3rem;
+}
+.main-view {
+  flex-direction: row;
+}
+.form-content {
+  max-width: 100%;
+  margin: 0 ;
+}
+.bg-img-container {
+  height: 95vh;
+}
+.bg-img-Color {
+  background-color: #1B1F3B;
+  width: 80%;
+  height: 100%;
+  border-radius: 0 100px 100px 0;
+}
+.parrafo-error{
+  font-size: 16px;
+}
+.bg-img,
+.form-content {
+  flex: 1;
+}
+.bg-img-taxi {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  left: 0;
+  max-width: 100%;
+}
+.link{
+  font-size: 16px;
+}
+.title {
+  font-size: 50px;
+  margin: 0;
+  line-height: 1;
+}
+.index-title {
+  max-width: 286px;
+}
+.paragraph {
+  font-size: 22px;
+  line-height: 26.82px;
+  margin-block: 2.5rem;
+}
+/* SECCION ACORDEON */
+.acordeon-mobile{
+  display: none;
+}
+.display-mobile{
+  display: block;
+}
+.btns_slaider-desktop{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  margin-block: 4rem 3rem;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.btn-desktop{
+  background-color: rgba(27, 31, 59, 0.1); /* RGBA con opacidad del 10% */
+  color: #1B1F3B; /* Color del texto */
+  width: 100%;
+  height: 100%;
+  max-height: 86px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: clamp(1.5rem, 1vw + 1rem , 2rem);
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  padding: 18px 27px;
+  cursor: pointer;
+}
+.paragraph-num{
+  font-weight: 700;
+  font-size: 32px;
+}
+.paragraph-text-acordeon{
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  /* max-width: 443px; */
+}
+.paragraph-acordeon-h2{
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+.container-content-slaider{
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.container-items-desk{
+  display: flex;
+  gap: 1rem;
+}
+.container-item-desk{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  gap: 2rem;
+}
+.container-items2-desk{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 4rem;
+}
+.container-items2-desk p{
+  max-width: 100%;
+}
+.img-acordeon{
+  display: flex;
+  width: 100%;
+}
+.btn-desktop.active{
+  background-color: #1B1F3B;
+  color: white;
+}
+.content-momentoRegistro-text{
+  padding: 0;
+}
+.container-momentoRegistro-Padding{
+  padding-inline: 1rem;
+}
+.content-momentoRegistro{
+  display: flex;
+  padding-block: 3rem 5rem;
+  align-items: center;
+  gap: clamp(1rem, .5vw + 6rem, 7rem);
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.container-img-momentoRegistro{
+  max-width: 674px;
+}
+.content-momentoRegistro-text{
+  max-width: 558px;
+}
+.title-momento{
+  text-align: center;
+  margin-block: 2rem 1rem;
+}
+.paragraph-text-momento{
+  text-align: start;
+  line-height: 21.94px;
+}
+/* SECTION AFILIADOS */
+.tituloh3{  
+  font-size: 22px;
+  line-height: 26.82px;
+}
+.container-section-img{
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.seccion-afiliados-content{
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.container-onlyImg{
+  flex: 30%;
+  justify-content: left;
+}
+.container-groupImg{
+  flex: 70%;
+}
+.container-groupImg{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding-inline: 1rem;
+}
+.container-onlyImg img{
+  max-width: 100%;
+}
+.container-groupImg{
+  border-left: 1px solid #FFFFFF;
+}
+.container-imgGroup{
+  display: flex;
+  align-items: center;
+}
+/* SECCION CREA TU CUENTA */
+.p-link{
+  font-size: 18px;
+}
+.title-crea-cuenta{
+  margin-bottom: 4rem;
+}
+/* SECCION VALIDACION CONTRASEÑA */
+
+.title-validacion-contra{
+  max-width: 500px;
+  line-height: 60.95px;
+}
+.form-content .label-code .main-input{
+  padding: 0;
+  font-size: 50px;
+  border: 2px solid #AFAFAF;
+}

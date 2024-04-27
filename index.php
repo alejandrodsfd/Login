@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Front</title>
+  <link rel='preload' href='/public/fonts/Montserrat-VariableFont_wght.ttf' as='font' type='font/ttf'
+    crossorigin />
+  <link rel='preload' href='/public/css/taxidisponibleMobile.css' as='style'
+    onload='this.onload=null;this.rel="stylesheet"' />
+  <noscript>
+    <link rel='stylesheet' href='/public/css/taxidisponibleMobile.css' />
+  </noscript>
+  <link rel='stylesheet' href='/public/css/taxidisponibleTablet.css' media='(min-width: 800px)' />
+</head>
+
+<body>
+  <div class="container__page">
+    <div class="main-view">
+      <div class="bg-img">
+        <div class="bg-img-container">
+          <div class="bg-img-Color"></div>
+          <img class="bg-img-taxi" src="/public/images/taxi-disponible.webp" alt="taxi cuenta taxi disponible"
+            loading="lazy"
+            srcset="/public/images/taxi-disponibleMobile.webp 500w, /public/images/taxi-disponible.webp 810w"
+            sizes="(max-width: 600px) 500px, 810px">
+        </div>
+      </div>
+      <div class="form-content">
+        <h1 class="title index-title">Taxi Disponible</h1>
+        <p class="paragraph index-paragraph">Un aplicativo de Taxis Libres que permite a propietarios encontrar un
+          conductor de taxi y a aliados conductores encontrar un taxi para trabajar.</p>
+        <!-- Componente inputs -->
+        <div class="inputs">
+          <label class="main-label" for="email">
+            <input class="main-input" type="email" id="email" placeholder="Correo electrónico">
+            <svg class="icono-input" width="16" height="16" viewBox="0 0 16 16" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8 8C6.9 8 5.95833 7.60833 5.175 6.825C4.39167 6.04167 4 5.1 4 4C4 2.9 4.39167 1.95833 5.175 1.175C5.95833 0.391667 6.9 0 8 0C9.1 0 10.0417 0.391667 10.825 1.175C11.6083 1.95833 12 2.9 12 4C12 5.1 11.6083 6.04167 10.825 6.825C10.0417 7.60833 9.1 8 8 8ZM0 16V13.2C0 12.6333 0.146 12.1123 0.438 11.637C0.73 11.1617 1.11733 10.7993 1.6 10.55C2.63333 10.0333 3.68333 9.64567 4.75 9.387C5.81667 9.12833 6.9 8.99933 8 9C9.1 9 10.1833 9.12933 11.25 9.388C12.3167 9.64667 13.3667 10.034 14.4 10.55C14.8833 10.8 15.271 11.1627 15.563 11.638C15.855 12.1133 16.0007 12.634 16 13.2V16H0ZM2 14H14V13.2C14 13.0167 13.954 12.85 13.862 12.7C13.77 12.55 13.6493 12.4333 13.5 12.35C12.6 11.9 11.6917 11.5627 10.775 11.338C9.85833 11.1133 8.93333 11.0007 8 11C7.06667 11 6.14167 11.1127 5.225 11.338C4.30833 11.5633 3.4 11.9007 2.5 12.35C2.35 12.4333 2.229 12.55 2.137 12.7C2.045 12.85 1.99933 13.0167 2 13.2V14ZM8 6C8.55 6 9.021 5.804 9.413 5.412C9.805 5.02 10.0007 4.54933 10 4C10 3.45 9.804 2.979 9.412 2.587C9.02 2.195 8.54933 1.99933 8 2C7.45 2 6.979 2.196 6.587 2.588C6.195 2.98 5.99933 3.45067 6 4C6 4.55 6.196 5.021 6.588 5.413C6.98 5.805 7.45067 6.00067 8 6Z"
+                fill="#A9A9A9" />
+            </svg>
+          </label>
+          <p class="parrafo-error">Por favor, ingresa un correo válido</p>
+          <label class="main-label" for="password">
+            <input class="main-input" type="password" id="password" placeholder="Contraseña">
+            <svg class="icono-input" width="16" height="22" viewBox="0 0 16 22" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8 16.5C7.46957 16.5 6.96086 16.2893 6.58579 15.9142C6.21071 15.5391 6 15.0304 6 14.5C6 13.39 6.89 12.5 8 12.5C8.53043 12.5 9.03914 12.7107 9.41421 13.0858C9.78929 13.4609 10 13.9696 10 14.5C10 15.0304 9.78929 15.5391 9.41421 15.9142C9.03914 16.2893 8.53043 16.5 8 16.5ZM14 19.5V9.5H2V19.5H14ZM14 7.5C14.5304 7.5 15.0391 7.71071 15.4142 8.08579C15.7893 8.46086 16 8.96957 16 9.5V19.5C16 20.0304 15.7893 20.5391 15.4142 20.9142C15.0391 21.2893 14.5304 21.5 14 21.5H2C1.46957 21.5 0.960859 21.2893 0.585786 20.9142C0.210714 20.5391 0 20.0304 0 19.5V9.5C0 8.39 0.89 7.5 2 7.5H3V5.5C3 4.17392 3.52678 2.90215 4.46447 1.96447C5.40215 1.02678 6.67392 0.5 8 0.5C8.65661 0.5 9.30679 0.629329 9.91342 0.880602C10.52 1.13188 11.0712 1.50017 11.5355 1.96447C11.9998 2.42876 12.3681 2.97995 12.6194 3.58658C12.8707 4.19321 13 4.84339 13 5.5V7.5H14ZM8 2.5C7.20435 2.5 6.44129 2.81607 5.87868 3.37868C5.31607 3.94129 5 4.70435 5 5.5V7.5H11V5.5C11 4.70435 10.6839 3.94129 10.1213 3.37868C9.55871 2.81607 8.79565 2.5 8 2.5Z"
+                fill="#A9A9A9" />
+            </svg>
+          </label>
+        </div>
+        <button class="button" id="btnTaxiDisponible">Iniciar sesión</button>
+        <a class="link" href="validacion-contra.php">Olvidé la contraseña</a>
+        <a class="button-link" href="crea-tu-cuenta.php">Crear cuenta <svg width="12" height="21" viewBox="0 0 12 21"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.571427 17.6429L7.71429 10.5L0.571428 3.35714L2 0.499999L12 10.5L2 20.5L0.571427 17.6429Z"
+              fill="#1B1F3B" />
+          </svg></a>
+      </div>
+
+    </div>
+    <div class="acordeon-section">
+      <h2 class="title display-mobile text-center">¿Cómo funciona?</h2>
+      <div class="acordeon-content">
+
+        <div class="acordeon-mobile">
+          <section class="acordeon-item active">
+            <div class="btn-acordeon">Aliado Conductor <svg width="20" height="12" viewBox="0 0 20 12" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20 2.27027L10.2703 12L0.540527 2.27027L2.8108 -9.92367e-08L10.2703 7.45946L17.7297 -7.51364e-07L20 2.27027Z"
+                  fill="#1B1F3B" />
+              </svg>
+            </div>
+            <div class="content__item-acordeon  ">
+              <img class="img-main" src="public/images/Taxis-Libres-App-info.svg" alt="Taxis Libres App info">
+              <div class="list-items">
+                <ol>
+                  <li>
+                    <p class="parrafo-acordeon">Actívate como conductor y completa la información de tu perfil como años
+                      de experiencia, tu
+                      disponibilidad, intereses, etcétera.</p>
+                  </li>
+                  <img class="margin-bottom img-sec" src="/public/images/Taxis-Libres-App-datos.webp"
+                    alt="Taxis Libres App datos">
+                  <li>
+                    <p class="parrafo-acordeon">Selecciona la oferta de trabajo que más te interese y revisa el valor
+                      del
+                      producido, el tipo de
+                      turno o la disponibilidad que requiere.</p>
+                  </li>
+                  <img class="margin-bottom img-sec" src="/public/images/Taxis-Libres-pago-seguro.webp"
+                    alt="Taxis Libres pago seguros">
+                  <li>
+                    <p class="parrafo-acordeon">Aplica ¡y listo! Podrás comunicarte directamente con el propietario.</p>
+                  </li>
+                </ol>
+              </div>
+              <div class="content-sinOl">
+                <img src="/public/images/img-slaider.webp" alt="img slaider">
+                <div class="parrafo">
+                  <p class="parrafo-acordeon">También verás tu historial de vehículos conducidos, mensajes, ofertas
+                    favoritas, ofertas a las que
+                    has aplicado y tus calificaciones.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="acordeon-item">
+            <div class="btn-acordeon">Propietario <svg width="20" height="12" viewBox="0 0 20 12" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20 2.27027L10.2703 12L0.540527 2.27027L2.8108 -9.92367e-08L10.2703 7.45946L17.7297 -7.51364e-07L20 2.27027Z"
+                  fill="#1B1F3B" />
+              </svg>
+            </div>
+            <div class="content__item-acordeon">
+              <img class="img-main" src="/public/images/Taxis-Libres-App-info.svg" alt="Taxis Libres App info">
+              <div class="list-items">
+                <ol>
+                  <li>
+                    <p class="parrafo-acordeon">Crea y publica tu oferta.</p>
+                  </li>
+                  <img class="margin-bottom img-sec" src="/public/images/Taxis-Libres-App-datos.webp"
+                    alt="Taxis Libres App datos">
+                  <li>
+                    <p class="parrafo-acordeon">Revisa y conoce a detalle los aliados conductores que aplicaron a ella.
+                    </p>
+                  </li>
+                  <img class="margin-bottom img-sec" src="/public/images/Taxis-Libres-pago-seguro.webp"
+                    alt="Taxis Libres pago seguros">
+                  <li>
+                    <p class="parrafo-acordeon">Elige al mejor candidato entre conductores capacitados, sin bloqueos y
+                      con
+                      los requisitos
+                      establecidos para prestar un buen servicio.</p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="acordeon-desktop">
+          <div class="btns_slaider-desktop">
+            <button class="btn-desktop btn1 active" type="button">Aliado conductor</button>
+            <button class="btn-desktop btn2" type="button">Propietario</button>
+          </div>
+          <div class="container-content-slaider">
+            <p class="paragraph paragraph-acordeon-h2" id="textTitle">Encuentra trabajo como conductor de taxi de forma
+              sencilla.</p>
+            <div class="container-items-desk">
+              <div class="container-item-desk">
+                <img id="img1" src="/public/images/Taxis-Libres-App-info.webp" alt="Taxis Libres App info">
+                <p class="paragraph-num">1</p>
+                <p class="paragraph-text-acordeon" id="text1">Actívate como conductor y completa la información de tu
+                  perfil como
+                  años de experiencia, tu
+                  disponibilidad, intereses, etcétera.</p>
+              </div>
+              <div class="container-item-desk">
+                <img id="img2" src="/public/images/Taxis-Libres-App-datos.webp" alt="Taxis Libres App info">
+                <p class="paragraph-num">2</p>
+                <p class="paragraph-text-acordeon" id="text2">Selecciona la oferta de trabajo que más te interese y
+                  revisa
+                  el valor
+                  del producido, el tipo de turno o
+                  la disponibilidad que requiere.</p>
+              </div>
+              <div class="container-item-desk">
+                <img id="img3" src="/public/images/Taxis-Libres-pago-seguro.webp" alt="Taxis Libres App info">
+                <p class="paragraph-num">3</p>
+                <p class="paragraph-text-acordeon" id="text3">Aplica ¡y listo! <br> Podrás comunicarte directamente con
+                  el
+                  propietario.</p>
+              </div>
+            </div>
+
+            <div class="container-items2-desk">
+              <p class="paragraph-text-acordeon">También verás tu historial de vehículos conducidos, mensajes, ofertas
+                favoritas, ofertas a las que has
+                aplicado y tus calificaciones.</p>
+              <div class="img-acordeon">
+                <img src="/public/images/img-slaider.webp" alt="img slaider">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="seccion-momentoRegistro">
+      <div class="container-momentoRegistro">
+        <h2 class="title title-momento">Ahora sí llegó el momento de registrarte</h2>
+        <div class="container-momentoRegistro-Padding">
+          <div class="content-momentoRegistro">
+            <div class="content-momentoRegistro-text">
+              <p class="paragraph-text-acordeon paragraph-text-momento">Solo debes completar tus datos personales y dar
+                clic
+                en Enviar. Recibirás una notificación indicando que tu solicitud fue recibida y en un lapso de 24 horas
+                máximo te estaremos dando respuesta.
+                <br><br>
+                Debes estar atento al correo electrónico que registraste, ya que por este medio te contestaremos.
+              </p>
+              <a class="button-link btn-momento" href="crea-tu-cuenta.php">Crear cuenta
+                <svg width="12" height="21" viewBox="0 0 12 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.571427 17.6429L7.71429 10.5L0.571428 3.35714L2 0.499999L12 10.5L2 20.5L0.571427 17.6429Z"
+                    fill="#1B1F3B"></path>
+                </svg></a>
+            </div>
+            <div class="container-img-momentoRegistro">
+              <img src="/public/images/Aliado-conductor-momento-registro.webp" alt="Aliado conductor momento registro">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="seccion-afiliados">
+      <div class="seccion-afiliados-content">
+        <h3 class="tituloh3">Aplica para afiliados a cualquier compañía del Grupo Carrera</h3>
+        <div class="container-section-img">
+          <div class="container-onlyImg">
+            <img src="/public/images/grupo-carrera.webp" alt="img grupo carrera">
+          </div>
+          <div class="container-groupImg">
+            <div class="container-imgGroup">
+              <img src="/public/images/Taxis-libres.webp" alt="img Taxis libres">
+            </div>
+            <div class="container-imgGroup">
+              <img src="/public/images/aeropuerto.webp" alt="img aeropuerto">
+            </div>
+            <div class="container-imgGroup">
+              <img src="/public/images/super-taxi.webp" alt="img super taxi">
+            </div>
+            <div class="container-imgGroup">
+              <img src="/public/images/telecoper.webp" alt="img telecoper">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const $containerItems2 = document.querySelector(".container-items2-desk");
+      const $textTitle = document.getElementById("textTitle");
+      const $acordeonItems = document.querySelectorAll(".acordeon-item");
+      const $acordeonBtns = document.querySelectorAll(".btn-desktop");
+      const $inputEmail = document.getElementById("email");
+      const $btnTaxiDisponible = document.getElementById("btnTaxiDisponible");
+      const $parrafoError = document.querySelector(".parrafo-error");
+
+      const buttonConfigurations = {
+        "btn1": {
+          title: "Encuentra trabajo como conductor de taxi de forma sencilla.",
+          images: [
+            "/public/images/Taxis-Libres-App-info.webp",
+            "/public/images/Taxis-Libres-App-datos.webp",
+            "/public/images/Taxis-Libres-pago-seguro.webp"
+          ],
+          texts: [
+            "Actívate como conductor y completa la información de tu perfil como años de experiencia, tu disponibilidad, intereses, etcétera.",
+            "Selecciona la oferta de trabajo que más te interese y revisa el valor del producido, el tipo de turno o la disponibilidad que requiere.",
+            "Aplica ¡y listo! Podrás comunicarte directamente con el propietario."
+          ]
+        },
+        "btn2": {
+          title: "¿Buscas un conductor para tu taxi? <b>¡Nosotros te ayudamos!</b>",
+          images: [
+            "/public/images/Taxis-Libres-pago-seguro.webp",
+            "/public/images/Taxis-Libres-App-info.webp",
+            "/public/images/Taxis-Libres-App-datos.webp"
+          ],
+          texts: [
+            "Crea y publica tu oferta.",
+            "Revisa y conoce a detalle los aliados conductores que aplicaron a ella.",
+            "Elige al mejor candidato entre conductores capacitados, sin bloqueos y con los requisitos establecidos para prestar un buen servicio."
+          ]
+        }
+      };
+
+      function updateUI(btnKey) {
+        const { title, images, texts } = buttonConfigurations[btnKey];
+        $textTitle.innerHTML = title;
+        images.forEach((img, index) => document.getElementById(`img${index + 1}`).src = img);
+        texts.forEach((text, index) => document.getElementById(`text${index + 1}`).textContent = text);
+        $containerItems2.style.opacity = (btnKey === "btn1") ? "1" : "0";
+        $containerItems2.style.overflow = (btnKey === "btn1") ? "visible" : "hidden";
+      }
+
+      function handleAccordionItemClick() {
+        $acordeonItems.forEach(item => item.addEventListener("click", function () {
+          // $acordeonItems.forEach(item => item.classList.remove("active"));
+          this.classList.toggle("active");
+        }));
+      }
+
+      function handleButtonClickListener() {
+        $acordeonBtns.forEach(btn => btn.addEventListener("click", function () {
+          $acordeonBtns.forEach(btn => btn.classList.remove("active"));
+          this.classList.add("active");
+          updateUI(this.classList[1]);
+        }));
+      }
+
+      $btnTaxiDisponible.addEventListener("click", e => {
+        const regexTuCorreo = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if (!regexTuCorreo.test($inputEmail.value)) {
+          $parrafoError.style.display = "flex";
+          setTimeout(() => { $parrafoError.style.display = "none"; }, 6000);
+        }
+      });
+
+      handleAccordionItemClick();
+      handleButtonClickListener();
+    });
+
+  </script>
+</body>
+
+</html>

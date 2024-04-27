@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crea tu cuenta</title>
+  <link rel='preload' href='/public/fonts/Montserrat-VariableFont_wght.ttf' as='font' type='font/ttf' crossorigin />
+  <link rel='preload' href='/public/css/taxidisponibleMobile.css' as='style'
+    onload='this.onload=null;this.rel="stylesheet"' />
+  <noscript>
+    <link rel='stylesheet' href='/public/css/taxidisponibleMobile.css' />
+  </noscript>
+  <link rel='stylesheet' href='/public/css/taxidisponibleTablet.css' media='(min-width: 800px)' />
+</head>
+
+<body>
+  <div class="container__page">
+    <div class="main-view">
+      <div class="bg-img">
+        <div class="bg-img-container">
+          <div class="bg-img-Color"></div>
+          <img class="bg-img-taxi" src="/public/images/taxi-disponible.webp" alt="taxi cuenta taxi disponible"
+            loading="lazy"
+            srcset="/public/images/taxi-disponibleMobile.webp 500w, /public/images/taxi-disponible.webp 810w"
+            sizes="(max-width: 600px) 500px, 810px">
+        </div>
+      </div>
+      <div class="form-content ">
+        <h1 class="title title-crea-cuenta">Crea tu cuenta</h1>
+        <!-- Componente inputs -->
+        <div class="inputs">
+          <label class="main-label" for="name">
+            <input class="main-input" type="text" id="name" placeholder="Nombre completo">
+            <svg class="icono-input" width="16" height="16" viewBox="0 0 16 16" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8 8C6.9 8 5.95833 7.60833 5.175 6.825C4.39167 6.04167 4 5.1 4 4C4 2.9 4.39167 1.95833 5.175 1.175C5.95833 0.391667 6.9 0 8 0C9.1 0 10.0417 0.391667 10.825 1.175C11.6083 1.95833 12 2.9 12 4C12 5.1 11.6083 6.04167 10.825 6.825C10.0417 7.60833 9.1 8 8 8ZM0 16V13.2C0 12.6333 0.146 12.1123 0.438 11.637C0.73 11.1617 1.11733 10.7993 1.6 10.55C2.63333 10.0333 3.68333 9.64567 4.75 9.387C5.81667 9.12833 6.9 8.99933 8 9C9.1 9 10.1833 9.12933 11.25 9.388C12.3167 9.64667 13.3667 10.034 14.4 10.55C14.8833 10.8 15.271 11.1627 15.563 11.638C15.855 12.1133 16.0007 12.634 16 13.2V16H0ZM2 14H14V13.2C14 13.0167 13.954 12.85 13.862 12.7C13.77 12.55 13.6493 12.4333 13.5 12.35C12.6 11.9 11.6917 11.5627 10.775 11.338C9.85833 11.1133 8.93333 11.0007 8 11C7.06667 11 6.14167 11.1127 5.225 11.338C4.30833 11.5633 3.4 11.9007 2.5 12.35C2.35 12.4333 2.229 12.55 2.137 12.7C2.045 12.85 1.99933 13.0167 2 13.2V14ZM8 6C8.55 6 9.021 5.804 9.413 5.412C9.805 5.02 10.0007 4.54933 10 4C10 3.45 9.804 2.979 9.412 2.587C9.02 2.195 8.54933 1.99933 8 2C7.45 2 6.979 2.196 6.587 2.588C6.195 2.98 5.99933 3.45067 6 4C6 4.55 6.196 5.021 6.588 5.413C6.98 5.805 7.45067 6.00067 8 6Z"
+                fill="#A9A9A9" />
+            </svg>
+          </label>
+          <p class="parrafo-error">Por favor, ingresa un nombre válido</p>
+          <label class="main-label" for="cedula">
+            <input class="main-input" type="number" id="cedula" placeholder="Cédula">
+            <svg class="icono-input" width="16" height="22" viewBox="0 0 16 22" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8 16.5C7.46957 16.5 6.96086 16.2893 6.58579 15.9142C6.21071 15.5391 6 15.0304 6 14.5C6 13.39 6.89 12.5 8 12.5C8.53043 12.5 9.03914 12.7107 9.41421 13.0858C9.78929 13.4609 10 13.9696 10 14.5C10 15.0304 9.78929 15.5391 9.41421 15.9142C9.03914 16.2893 8.53043 16.5 8 16.5ZM14 19.5V9.5H2V19.5H14ZM14 7.5C14.5304 7.5 15.0391 7.71071 15.4142 8.08579C15.7893 8.46086 16 8.96957 16 9.5V19.5C16 20.0304 15.7893 20.5391 15.4142 20.9142C15.0391 21.2893 14.5304 21.5 14 21.5H2C1.46957 21.5 0.960859 21.2893 0.585786 20.9142C0.210714 20.5391 0 20.0304 0 19.5V9.5C0 8.39 0.89 7.5 2 7.5H3V5.5C3 4.17392 3.52678 2.90215 4.46447 1.96447C5.40215 1.02678 6.67392 0.5 8 0.5C8.65661 0.5 9.30679 0.629329 9.91342 0.880602C10.52 1.13188 11.0712 1.50017 11.5355 1.96447C11.9998 2.42876 12.3681 2.97995 12.6194 3.58658C12.8707 4.19321 13 4.84339 13 5.5V7.5H14ZM8 2.5C7.20435 2.5 6.44129 2.81607 5.87868 3.37868C5.31607 3.94129 5 4.70435 5 5.5V7.5H11V5.5C11 4.70435 10.6839 3.94129 10.1213 3.37868C9.55871 2.81607 8.79565 2.5 8 2.5Z"
+                fill="#A9A9A9" />
+            </svg>
+          </label>
+          <p class="parrafo-error">Por favor, ingresa una cédula válido</p>
+          <label class="main-label" for="contacto">
+            <input class="main-input" type="number" id="contacto" placeholder="Número de contacto" max="10">
+            <svg class="icono-input" width="18" height="18" viewBox="0 0 18 18" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M2.25536 7.03916C4.04611 10.9376 7.22787 14.027 11.1774 15.7022L11.1894 15.7072L11.9534 16.0472C12.4253 16.2576 12.9552 16.2992 13.4542 16.165C13.9531 16.0308 14.3907 15.7289 14.6934 15.3102L15.9674 13.5472C16.0048 13.4952 16.0209 13.4309 16.0124 13.3675C16.0038 13.304 15.9712 13.2463 15.9214 13.2062L13.6974 11.4112C13.6711 11.39 13.6409 11.3744 13.6084 11.3652C13.576 11.356 13.542 11.3535 13.5085 11.3578C13.4751 11.3621 13.4429 11.3731 13.4138 11.3902C13.3847 11.4073 13.3594 11.43 13.3394 11.4572L12.4734 12.6252C12.3713 12.763 12.2252 12.8616 12.0592 12.9048C11.8933 12.9479 11.7176 12.9329 11.5614 12.8622C8.60241 11.5217 6.2318 9.15111 4.89136 6.19216C4.82067 6.03596 4.80563 5.86024 4.84875 5.6943C4.89188 5.52835 4.99056 5.38219 5.12836 5.28016L6.29536 4.41316C6.32248 4.39312 6.34526 4.3678 6.36234 4.33873C6.37941 4.30965 6.39043 4.27742 6.39473 4.24398C6.39903 4.21053 6.39651 4.17656 6.38734 4.14412C6.37817 4.11167 6.36253 4.08141 6.34136 4.05516L4.54736 1.83116C4.50722 1.78129 4.44948 1.74872 4.38603 1.74017C4.32259 1.73161 4.25828 1.74771 4.20636 1.78516L2.43336 3.06516C2.01176 3.36927 1.70846 3.80998 1.57502 4.3124C1.44158 4.81481 1.48622 5.34794 1.70136 5.82116L2.25536 7.03816V7.03916ZM10.5854 17.0802C6.29446 15.2582 2.83796 11.9004 0.89236 7.66416L0.890359 7.66216L0.336359 6.44216C-0.0222207 5.6536 -0.0967321 4.76521 0.125485 3.92793C0.347701 3.09066 0.852939 2.35614 1.55536 1.84916L3.32836 0.569165C3.69149 0.307085 4.14127 0.19419 4.58512 0.253717C5.02898 0.313245 5.43312 0.540665 5.71436 0.889165L7.50936 3.11416C7.65749 3.29774 7.76698 3.50936 7.83125 3.73632C7.89552 3.96328 7.91324 4.2009 7.88335 4.43488C7.85346 4.66886 7.77657 4.89439 7.65731 5.0979C7.53805 5.30142 7.37888 5.47872 7.18936 5.61916L6.51936 6.11516C7.65214 8.31151 9.44102 10.1004 11.6374 11.2332L12.1344 10.5632C12.2748 10.3738 12.452 10.2147 12.6555 10.0956C12.8589 9.97641 13.0843 9.89958 13.3182 9.86969C13.552 9.8398 13.7895 9.85748 14.0164 9.92166C14.2433 9.98584 14.4548 10.0952 14.6384 10.2432L16.8634 12.0382C17.2121 12.3194 17.4397 12.7238 17.4993 13.1679C17.5588 13.612 17.4457 14.062 17.1834 14.4252L15.9094 16.1892C15.4051 16.8871 14.6759 17.3902 13.8445 17.614C13.013 17.8378 12.1299 17.7687 11.3434 17.4182L10.5854 17.0802Z"
+                fill="#A9A9A9" />
+            </svg>
+          </label>
+          <p class="parrafo-error">Por favor, ingresa un número de celular válido</p>
+          <label class="main-label" for="email">
+            <input class="main-input" type="email" id="email" placeholder="Correo electrónico">
+            <svg class="icono-input-email" width="20" height="16" viewBox="0 0 20 16" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M18 1H2C1.44772 1 1 1.44772 1 2V14C1 14.5523 1.44772 15 2 15H18C18.5523 15 19 14.5523 19 14V2C19 1.44772 18.5523 1 18 1Z"
+                stroke="#A9A9A9" stroke-width="2" stroke-linecap="round" />
+              <path d="M1 2.5L10 8L19 2.5" stroke="#A9A9A9" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </label>
+          <p class="parrafo-error">Por favor, ingresa un correo válido</p>
+
+          <label class="main-label" for="licencia">
+            <input class="main-input" type="number" id="licencia" placeholder="No. Licencia de conducción">
+            <svg class="icono-input" width="20" height="20" viewBox="0 0 20 20" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M18.772 8.16546L17.404 4.06046C17.2056 3.46294 16.8238 2.94316 16.3131 2.57497C15.8024 2.20678 15.1886 2.0089 14.559 2.00946H12V0.00946045H8V2.00946H5.441C4.81139 2.0089 4.19761 2.20678 3.68688 2.57497C3.17615 2.94316 2.79445 3.46294 2.596 4.06046L1.228 8.16546C0.864613 8.31794 0.554277 8.57422 0.335845 8.90222C0.117412 9.23023 0.000589089 9.61538 0 10.0095V15.0095C0 15.7625 0.423 16.4115 1.039 16.7525C1.026 16.8185 1 16.8785 1 16.9475V19.0095C1 19.2747 1.10536 19.529 1.29289 19.7166C1.48043 19.9041 1.73478 20.0095 2 20.0095H3C3.26522 20.0095 3.51957 19.9041 3.70711 19.7166C3.89464 19.529 4 19.2747 4 19.0095V17.0095H16V19.0095C16 19.2747 16.1054 19.529 16.2929 19.7166C16.4804 19.9041 16.7348 20.0095 17 20.0095H18C18.2652 20.0095 18.5196 19.9041 18.7071 19.7166C18.8946 19.529 19 19.2747 19 19.0095V16.9475C19 16.8785 18.974 16.8175 18.961 16.7525C19.2744 16.5816 19.5362 16.3297 19.7189 16.0231C19.9017 15.7165 19.9988 15.3664 20 15.0095V10.0095C20 9.18046 19.492 8.46846 18.772 8.16546ZM2 15.0095V10.0095H18L18.002 15.0095H2ZM5.441 4.00946H14.558C14.989 4.00946 15.371 4.28346 15.507 4.69346L16.613 8.00946H3.387L4.492 4.69346C4.55835 4.49425 4.68572 4.32099 4.85605 4.19822C5.02638 4.07545 5.23104 4.00941 5.441 4.00946Z"
+                fill="#A9A9A9" />
+              <path
+                d="M4.5 14.0095C5.32843 14.0095 6 13.3379 6 12.5095C6 11.681 5.32843 11.0095 4.5 11.0095C3.67157 11.0095 3 11.681 3 12.5095C3 13.3379 3.67157 14.0095 4.5 14.0095Z"
+                fill="#A9A9A9" />
+              <path
+                d="M15.5 14.0095C16.3284 14.0095 17 13.3379 17 12.5095C17 11.681 16.3284 11.0095 15.5 11.0095C14.6716 11.0095 14 11.681 14 12.5095C14 13.3379 14.6716 14.0095 15.5 14.0095Z"
+                fill="#A9A9A9" />
+            </svg>
+
+          </label>
+        </div>
+        <a class="button-link button-green" id="crearCuenta" href="#">Crear cuenta <svg width="12" height="21"
+            viewBox="0 0 12 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.571427 17.6429L7.71429 10.5L0.571428 3.35714L2 0.499999L12 10.5L2 20.5L0.571427 17.6429Z"
+              fill="#1B1F3B" />
+          </svg></a>
+        <p class="p-link">¿Ya tienes una cuenta? <a href="index.php">Inicia sesión.</a></p>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const $btnCrearCuenta = document.getElementById("crearCuenta");
+      const $parrafosError = document.querySelectorAll(".parrafo-error");
+
+      function validarCampo(index) {
+        if (index >= $parrafosError.length) {
+          // Si todos los campos han pasado la validación, se envia el formulario
+          return true;
+        }
+
+        const parrafoError = $parrafosError[index];
+        const input = parrafoError.previousElementSibling.querySelector(".main-input");
+        let regex;
+        let mensaje;
+
+        switch (input.id) {
+          case "name":
+            regex = /^[a-zA-ZÁ-ÿ\s']+$/;
+            mensaje = "Por favor, ingresa un nombre válido";
+            break;
+          case "email":
+            regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            mensaje = "Por favor, ingresa un correo válido";
+            break;
+          case "cedula":
+            regex = /^\d+$/;
+            mensaje = "Por favor, ingresa una cédula válida";
+            break;
+          case "contacto":
+            regex = /^3[0-9]{9}$/;
+            mensaje = "Por favor, ingresa un número de celular válido";
+            break;
+
+          default:
+            break;
+        }
+
+        if (!regex.test(input.value)) {
+          parrafoError.style.display = "flex";
+          setTimeout(() => { parrafoError.style.display = "none"; }, 3000);
+          // Si hay un error, se detiene la validación y devuelve false
+          return false;
+        }
+
+        // Si el campo actual pasa la validación, validar el siguiente campo
+        return validarCampo(index + 1);
+      }
+
+      $btnCrearCuenta.addEventListener("click", e => {
+        // Iniciar la validación desde el primer campo
+        if (!validarCampo(0)) {
+          // Si alguna validación falla, detener el envío del formulario
+          e.preventDefault();
+        }
+
+      });
+
+      function limitarDigitos(elemento, maximoDigitos) {
+        if (elemento.value.length > maximoDigitos) {
+          elemento.value = elemento.value.slice(0, maximoDigitos);
+        }
+      }
+
+      const $campoContacto = document.getElementById("contacto");
+      $campoContacto.addEventListener("input", function () {
+        limitarDigitos(this, 10); // Limita el campo a 10 dígitos
+      });
+    });
+
+  </script>
+</body>
+
+</html>
